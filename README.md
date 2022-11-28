@@ -73,6 +73,72 @@ to fit a good design for our purpose code refactor has to be done or
 Then the flow starts disappointingly to slow down, someone need to take 
 care of boring stuff (hopefully not us, the quick and dirty rogue programmers). 
 
+As Gothic cathedrals needed the invention of contra fortes to aid 
+the thin walls to support the outward derivative forces cúpula and 
+pinnacles to to direct forces downward; the program needs its structures 
+albeit purely abstract, practical on every other sense. 
+
+The architect as person or just as a role play must enter the game 
+at the right time, if it comes to early we risk a myriad of non 
+useful design attempts since the prototype hasn’t solidified and we 
+loose precious, unpaid time. But if he enters to late, the code might 
+gone wild, and refactor could be harder than restart from scratch. 
+If so, we stall if not just abort the mission and throw a new skeleton 
+to the closet. Both mistakes entail risks. 
+
+But get back to the role. The architect, the mason, imposes a load over 
+the rogue programmer, the mason robs him to rise  its tribute to please 
+the gods of craftlust to an otherwise impossible height. 
+
+If the mason is wise, he doesn’t take too much time from building activities, 
+since the workers are few, if not just one; if the imposed structure 
+is too big, complex, or hard to navigate, or just to abstract or even to 
+metaphorical outside the domain of the project at hand, the constructors 
+suffers, slow down, debugging gets cumbersome, and the flow disappears. 
+
+When the structure is untamed, the constructor bears the pain of lurking 
+over and over in its own faulty memory to know were to go, to build, 
+to debug. Bridging the structural abstractions to factual, active code 
+jumps over long rivers. 
+
+Hints of these hard to fix pitfalls appear in the form top down designs. 
+Appears in the form of long stack traces, injected code into classes, 
+generic alien words like containers, managers, policies, providers 
+and factories. Appears, also in sequences of one line function call chain 
+and proliferation of interfaces with just a single implementation 
+and pattern oriented design. Also appears, in external configuration files 
+to prevent future changes to require the slightest code change at all, 
+eluding the fact that for a programmer its simpler to write code than 
+settings files from XML, YAML, and property files. All the these come 
+from a too imaginative, envisioned architect. 
+
+But, the corp, big engineer would say: nonsense! all that stuff 
+you mention has its utility and we have successfully built great software 
+with clever, powerful and flexible designs. And that is also true, 
+for a large team, with tens, hundred or thousand of engineers architect 
+and developers the trade off can pay off but don’t forget that you count 
+with a hierarchical structure that can force compliance, submission to 
+an arbitrarily large or time consuming super structure, easily overlooked 
+in company with a paycheck. 
+
+For the rogue folks which builds free from the control and enforcement that 
+hierarchy imposes, and without the ability to dilute the work overload over 
+a large team and a heart motín can crash the ship, don’t forget: we creative 
+programmers on the wild, are moody creatures. 
+
+So, should we build grad cathedrals or modest chapels ? Well, the particulars 
+matter, we should judge the trade offs. It seems wiser to build the floor plans, 
+to architect, with a bottom up approach which helps to keep the design grounded 
+tight to its current demands. And this is closer to a truth as closer we are to 
+the prototype. Once the project needs to support divergent demands the converse 
+might be more nonsensical.
+
+If we are role playing, a sensible approach is to avoid playing the programmer 
+and the architect at the same time. One can derive benefits by holding a notebook 
+for sketching design ideas both for current and distant needs. This keep the mason 
+at bay. His ideas get heard so he doesn’t get furious and take over the a good 
+looking prototype and turn into a design monster.
+
 
                          TO BE CONTINUED
 
