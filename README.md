@@ -1,8 +1,40 @@
 ```php
 
 
+                           0. spark
 
-                        0.   A spark
+The physicist programmer might want to make a computer simulation 
+for a given model he has in mind, the mathematician could be give 
+a try to code his ideas to a computer generated graphical output. 
+The hobbyist programmer could want to build a small tool or a video 
+game, or a programming language, or whatnot. So a small program pops 
+from their fingers, out of pure will, not mandate, of desire 
+not of request, not during strict work day ours, it might just aid 
+to take something out of insomnia, It comes not to support a business 
+or an organization, comes without a budgets, a schedule, without supervisors,
+managers, even users. It comes not to satisfy a menial task required for a 
+big corp, not ch satisfy an external demand, not to have a definite place to
+fill in a coral construction, it doesn’t start from a request of a huge paid
+engineering team, collaborating pushed by market demands.
+
+But starts, nonetheless, and if runs kind of right specially under minimal 
+expectations, if it shows something interesting, even if barely working, 
+the physicist, the hobbyist, the mathematician, gets something back. 
+Feedback, a desired or unsuspected response, a digital oracle or an 
+abstract machine with its fuel and its work. It gives back a perspective 
+on the chosen topic, the program retrieves a panoramic view to the curious 
+in exchange of the tribute in lines of code. And crucially, it gives back 
+energy to go deeper.
+
+The mental model we had gets more definite, it distills richer questions 
+for the oracle, the machine envisioned develops and starts rolling, and 
+the creature demands more exploration.
+
+This voracious creature feeds from fingers, mind, time, and code.
+
+
+
+                        1.   then light
 
 
 As closer we are to the a concept model and to the prototype, 
@@ -37,6 +69,74 @@ unease of making destructive mistakes, losing files, entering
 a short but painful pathway or a rabbit hole we cannot 
 return from. So, a version control system enters the game and 
 we get bored we it’s simple albeit bureaucratic setup. 
+
+
+	          2.           Protos
+
+If we are lucky, and our mind is, at least this time, focal and our 
+adventure path is not too foggy, we have a broad direction to trip away. 
+If we have a dormant engineer side, a prototype idea can spawn.  A prototype, 
+which after construction, in a benevolent environment and the aid of crafty 
+hands, can solve a riddle, confirms enough the possibility of an interesting 
+machine, a useful one, it can offer a machine that at least partially works 
+as desired and could be the base better design explorations. A prototype 
+creation that with the proper components around and enough adjustments, 
+could bear a real world load and be elevated from a little experiment 
+out of curiosity to a key piece to solve a major puzzle, ours or not.
+
+A sensible prototype building grows better and faster with simplicity 
+in mind, it is expected to be imperfect and incomplete, to work 
+in almost ideal circumstances, its better built lightweight keeping in
+mind we might throw it away in a blink, we must waste little 
+construction material.
+
+Our prototype material is unfortunately caved from precious time mines.
+
+It’s by nature unstable since its ways to function get clearer only 
+after we go deeper. It can foresee internal consistency and structure 
+in favor of close season to harvest. It can neglect configuration since 
+is has to offer proof of utility on key scenario, not multitudes. 
+It serves better from brief, partial hardwired passive, crafted little 
+tight function-like components, than from mature but complex components 
+hard to integrate.
+
+Big, flexible components from the viewpoint of a little prototype more 
+common than not, derives in poor integration, tedious manual procedures 
+that ruin rapid tinkering, trials and much needed adjustments. .We must 
+be careful to avoid picking seemingly great components alien to our 
+experience, with voracious error prone setup times, complex class 
+hierarchies, partial documentation or simply put: too many ways of misuse. 
+
+The corp engineer, well seasoned and savant,  will finger at us: do not 
+reinvent the wheel, you novice. And that’s an undeniable part of the big 
+truth. But still, insist: we can code out of the way our cranky ten lines 
+of code logger, or two lines database backup script, our fifty lines 
+tightly integrated profiler tool if they sum a tenth of the time and 
+the headaches we have to invest to setup a complex and flexible standard 
+tool or component. 
+
+Even if a component does a terrific job for a big or even a small corp,  
+we don’t forget a corp might count with productive systems experience 
+using them, with seasoned specialists with knowledge on the nuances of 
+those tool sets, allowing them to have a quick setup and proper user. 
+They have also enough work force to withstand and dilute an additional 
+load on each member of the team. And with a paycheck, a painful 
+development experience can be easily neglected but in our untamed 
+project, it can might not be so. 
+
+ We are then likely better of them, we can custom tailor our own tools, 
+ as we need them, doing it’s eagle focused minimal jobs, providing it’s 
+ exact feedback where need them as long as we are perfectly aware than 
+ we will eventually or even likely drop them later when the life 
+ expectancy of the prototype or even the project expands. We must be 
+ aware of the trade off, if the tool gets too complex, hard to maintain 
+ or time consuming, then it’s time to get rid of them. If what seemed 
+ simple to craft probed not so, then go for something done, we 
+ nonetheless must be wise, and go for something simple enough. 
+
+As always, we have to ponder the best strategy, to build, to take 
+something simple, unknown or complex or flexible, and more importantly, 
+we must to be open to revert our decision when reality teach us wrong.
 
 Then our child grows. Masons enter to craft their medieval game 
 and a cathedral dominates the village. 
