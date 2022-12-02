@@ -145,7 +145,7 @@ Our beloved prototype must suffer a brutal dissection.
 
 
                
-                     1.   Masonry
+                     3.   Masonry
 
 
 Role play starts. The artisan, rogue programmer encounters 
@@ -240,7 +240,55 @@ at bay. His ideas get heard so he doesn’t get furious and take over the a good
 looking prototype and turn into a design monster.
 
 
-                         TO BE CONTINUED
+
+                        4.	 The Crystal Castle
+
+The prototype works flawless, it flies likes like an eagle, no fail so far, we checked 
+and re-checked the math, we played with it's console commands,  it's UI works 
+as its due,  we were meticulous safeguarding our little beast from misuse. But it is still 
+in the sandbox, no real, heavy load has been lifted. It might work perfectly yet 
+it's made from crystal glass, it's brittle in its purity, a like shock will smash 
+it into thousand pieces. To stand the teeth of time we must ensure that systemic 
+failure won't happen.  What if a networked resource is unavailable or worst,it fails 
+after allocation amidst its duty, can we recover ? if our realm needs to work restless,
+pleasing moon and sun, we should then give them it's due tribute. We, then, expect failure,
+and prepare. Every allocation can fail, should we have redudant resources? then they 
+must be properly setup, and taken into account at allocation times. 
+
+The prototype then matures to stand. 
+
+We shall be wise, not making this task casually while programming but taking it appart
+we it's due thinking, designs, and programming time, implemented gradually if needed. We
+shall keep role playing.
+
+What if a components becomes unrelayable, it starts to lag, it's aid is not ready when needed. 
+it times out. Does it break our UI, does the app hangs ? Do we left enough trace of for
+forensic analysis in the aftermaths ? Are timeouts properly set for each response according 
+to what is needed? Are exceptions handled and reported well enough ? Are they handled 
+at the proper layer to allow the system albeit degraded in it's capabilities still on duty ? 
+
+We have to take some time playing the role of analyst of fault tolerance needs, and as architects
+design accordingly the components, services, logs , settings, messages and event tracking to withstand 
+the punches, and get ormesis on our side.  Some simple tactics might help. Like forcing exceptions 
+in the code at different layers and then test them for failure. If we have time and seems worthy, 
+we can even design a simple way to force random failures now and then, to keep recovery tatics 
+excercised. We might want to track events of sucess and failures on a event tracker service, 
+it might be a custom solution like tracking them to a database. We can track our punches with 
+critical info like serverity, recovery state (hard fail or recovered), exception messages, 
+stack traces, time stamps. We might reset services, web servers, databases or machines to see 
+we recover properly. 
+
+To keep everyone calm, it's not enough to log and partial recover if no one handles the bad news. 
+If our beast pleases moon and sun gods, then we should use a tool that monitors its availability, 
+there are standard open source solutions that checks the health of a system according an specified 
+pattern, keeps track of delays, historical info and reporting through instant messaging services 
+and email. We can even make our even tracking service to have a descriptive monitor board for 
+different parts of the system.
+
+If we do our due, we leave the realm of a crystal prototype and enter 
+into the wild lands of production armed to fail with grace.
+
+                                   TO BE CONTINUED
 
 
 ```
