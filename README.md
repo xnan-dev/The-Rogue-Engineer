@@ -104,6 +104,51 @@ It serves better from brief, partial hardwired passive, crafted little
 tight function-like components, than from mature but complex components 
 hard to integrate.
 
+
+		3.          Our Domains
+		
+As a gaucho rastreador in la pampa,a kind of cawboy in the remote 
+south of the 19th century, we know our land, what tools we have, 
+languages, storage, command line tools, API services, OS, components 
+and math. We might adventure beyond our land while prototyping, it's 
+a sane exercise to look for components to aleviate the task at hand.
+We can find a simple tool with an online search which excuses us from
+the mind effort and time to develop something we are in need, and more 
+importantly to avoid the hassle of mantaining it after our primal 
+tinkering, to mature it, to ensure it meets it's required quality. 
+We should, howevever, be aware that we can end up spending more time 
+and headaches trying to make work some complex or badly documented
+component. That it can take us to a boring path, to feel stalled, 
+to hit too many walls and frustrate. We are not doing corp engineered, 
+we have limited energy, we are moody, no paycheck outweights 
+or dissapointments. 
+
+Worst than taking hard to tame beasts to support ours, is be tempted 
+to mix in a  flaming crisol athigh temperatures our wish to learn 
+and our determination to build. It's ok to adventure learning throughout
+a simple exploratory project, when your objective is to learn, to take 
+a shot on a shiny beast to ground our lectures with naif experience but 
+we our goal is to build something real, we must expect a delayed timeline 
+and a sub par quality due to the lake of expertise we have, due  to be
+ignorant of the shadows below the shiny. 
+
+If we are serius about or project, if is probably wiser to stick to 
+our domains, and expand it with care, taking advantage of any gently 
+fellow's work, who has been kind to share it's work or to expend in
+what can saves of much grinding. We can be bold but should be careful 
+enough to avoid too many cliffs and foul us to a land which we are 
+not competent enough. 
+
+We might lnow that we will benefit from using containers for better 
+distributing our load in production but if we are rockies can end up 
+losing weeks to get anything done, same for other sexy tech out there. 
+it can tiring, disappointing and be unacceptable on our expected 
+resources and timeline. Take into account the trade offs you make. 
+Avoid mixing too much unknowns, we are optimists to start walking 
+unknown paths, and get lost or doom our prototype with unrealiable 
+dependencies. Be wise, know your land, delay complexity. 
+
+
 Big, flexible components from the viewpoint of a little prototype more 
 common than not, derives in poor integration, tedious manual procedures 
 that ruin rapid tinkering, trials and much needed adjustments. .We must 
@@ -147,6 +192,41 @@ and a cathedral dominates the village.
 
 Our beloved prototype must suffer a brutal dissection. 
 
+
+Hardwired
+
+Unforntunely, there are aspects of what takes us beyond a prototype 
+that are unconvinient to isolate. Exception handling is one, it just 
+polutes our code, it intermixed our success paths with peripherial 
+details. A less complex one but still a mess is proper logging. 
+We should refrain to fall tempted on depend upon proxies to form 
+onions which expands the core with fine grained control. we don't 
+use language expansions like aspect oriented programming to enable 
+separation of our wired layers. It end ups hard to mantain anyway 
+and slow us down. 
+
+Whenever possible, we should try to separate the point from the 
+ellipsis, and isolate aspects that might later change, components 
+that we depend on, which introduces a foreign API and can pervade 
+our code base,slike torage solutions that have that downside. 
+We take care to not expose too much our dependencies througout 
+or simple, relevant API. 
+
+That doesn't mean to build complex hierarchies and settings files 
+to allow the uncertain, we won't foul as with a magic sphere like 
+a manusch luck teller, we use simple classes and methods, we prefer 
+the static from the dynamic, the particular from the generic, our 
+domain from external vocabulary. We shovel, tough  the accesory 
+appart when doable, always with simplicity, to avoid getting 
+punched repeatedly later through.
+
+We hide our means to retain control of our domain API, we avoid 
+to be dominated by an uncomfortable exoskelleton, an unwanted framework. 
+We avoid abstracting and interfacing early, we don't create to factories 
+unless we must, we don't  face with IoC from start:to avoid cumbersome 
+and troubled experience of code, hard to debug code we stay simple, 
+we conquer with humble code, as the ancient master Confusius said, 
+stay low, be like, the water conquers the rock, be like water.
 
                
                      3.   Masonry
