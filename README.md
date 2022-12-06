@@ -372,6 +372,67 @@ different parts of the system.
 If we do our due, we leave the realm of a crystal prototype and enter 
 into the wild lands of production armed to fail with grace.
 
+
+The purist
+
+Overseeing the programmer, there are two architects working on software design, their mind and 
+heart are posed at two scales. One thinks clean with homogeneity in mind, his breathes modules, 
+object hierarchies, abstractions and responsabilities, he splits and move around and regroup 
+method, distills interfaces, delimits scopes; pills up scrambled properties into addecuate 
+domain concepts, he enables reusability and minimizes inconsistencies. His tools are design 
+patterns, refactoring, domain knowledge. He takes into account proper care of non functional 
+requisites, allowing well organized error handling, tracing of troubles and security concerns. 
+
+The Eclectic
+
+The other architect takes a broader look at the system, he considers it outside the limits 
+of any chosen programming language, observes his fellow’s micro architecture work with desdein 
+and drops it in a black box. If many purity realms were needed through software or architect 
+demands, that box becomes many. If many many processes for a given box, then instances are setup. 
+He pounders how those heterogeneous pieces should interact and beyond the confines of a single 
+process and language purity, he thinks about networks, queues, remote messaging, infra structure 
+allocation, timed tasks, improvises messaging channels wiring components throughout amorphous 
+piles of storage, networking, files or pipes. He determines how to setup the existing components 
+into a living creature.  He designs how to monitor the monster behavior and safegard its storage 
+from fortuit destruction. Above all, he thinks pragmatically on how to take advantage of existing 
+standard components, remove the dust from legacy systems and give them another chance.
+ As in open sea ships, he designs stanc compartments to prevent sinking on  confined damages.
+
+Verbs and Nouns
+
+The word refactoring seems to allude to that old school math operation which reorganizes formulas 
+in a more usable form, in part, that’s what we do but what is missing in the analogy is the mean 
+we use, which is to fact we conceptualize sequence of steps on a general term which describes the 
+action. In the same sence we don’t talk about moving knees and muscles, leaning the torso and weaving 
+the arm ti say someone is walking, we take the same path of extract general concepts which helps not 
+only to avoid repetition but to also state a general intention of a complex activity. Another 
+consideration we take, is to avoid mixing different levels of conceptualization in the same sense 
+that a story teller don’t mix a character activity with a detail of how a given encyme is secreted 
+in his stomach. So, proper conceptualization to aid a well organized thinking is the main objective 
+of refactoring, which eases the work with the code base and avoids code duplication. In some cases, 
+the supporting low level details are extracted to a set of private methods, in others it’s better 
+to group them in a new low level module or class.
+
+Argument set conceptualization
+
+As a unit grows it might end up happening that a set of fields go everywere togetter, they could 
+simply a set of scalar variables more or less used on and on over different methods other times 
+they are stored as fields of an array or a similar structure. More often than not, they are part 
+of a general concept which can be grouped up in a class or a structure, that makes the reader’s 
+lifes simpler as it’s properly ties togetter the pieces with an identifiable name in method 
+declarations and usage.
+
+
+Splits
+
+Some classes or modules grow wild and end up mixing different sets of behaviors which makes hard
+to have a grasp of what is the relation between the unit at hand. An incisive cut from al savvy 
+hand can alleviate the consequences of such mess: if the place is chosen right, the new 
+conceptualization makes more sense for the code reader, the scope of action and state of each set
+is reduced. Other times what makes a mess within a unit is that a core functionality gets mixed up 
+with derived supporting functionality, splitting accordingly can make the core easier to analize 
+and maintain and avoids constant introduction of satellital functionality which should not change the core itself.
+
                                    TO BE CONTINUED
 
 
