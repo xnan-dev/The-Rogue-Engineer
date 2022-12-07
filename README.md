@@ -433,6 +433,120 @@ is reduced. Other times what makes a mess within a unit is that a core functiona
 with derived supporting functionality, splitting accordingly can make the core easier to analize 
 and maintain and avoids constant introduction of satellital functionality which should not change the core itself.
 
+			6. Constructor klans
+As a breed of mathematician, the programmer crafts its functions, them as we do, 
+sculpt abstract structures through the marvel nature's gifts called neo cortex. 
+But, most of them by tradition and for the most part of our technological evolution 
+they tint the paper, after the ancients left the arcilla the clay, the rock 
+and the dirt and sticks. 
+
+We, took the machinery built at the fifties, the childs of the ENIAC, the 
+craftmanship of the modern mathematicians, physist, and electrical engineers. 
+We, since not too long, have screens, and storage, we have compilers, static 
+type checking. we can mut the machinery at work, and recoeve a non human but 
+precise voice, an unfold echo of our declarations, as ecco gave to the 
+classical greeks. 
+
+So, we tinker easily, we can sculpt and unveil the master piece by approximation. 
+Our cousin mathematicians relay on their hability of god's scalp of perfection, 
+and scratch everything when they do what humans do most of the time, err. So, we
+tinker fast, and build babel sized intermixed complex of and simple constructs 
+bricked to unbelivable heights, we web out of persisting compositions on our work 
+and a coral ensemble of fellow programmers, we name details and stepping up and 
+struct, and name detail, always up. 
+
+They clear cut, small but incredibly complex structures which some times our 
+machinery cannot handle. While they abstract, the keep their realms mostly separate, 
+they loosely grammar they symbolic rules, while we, instead  have to feed our machine 
+beasts with no ambiguity. They inspect their counstruct old the time and wire the details 
+and gain thier results, while all the time, we wire as tje, ,  but far less,and obtain 
+mostly modest conclusions, but quite pragmatic ones.
+
+
+				6. 	Accuracy
+				
+Our cousins enact sisiphus pushing upwads their paper  rock, and crash it to the flat
+ground, when they fail to reach perfection. We, enact also sisiphus, over and over,
+through failing tests, every time we carry a simple error, our rock crashes to ground, 
+and we must debug, construct a bigger rock to climb, surrounded with incremental safeguards,
+additional tests, and more complex accurate code, until we fail, and debug again. 
+
+So, we get serious about keeping our machinery working, and take care to keep our 
+path to the mountain top, as short as we can, we automate tests to obtain rapidly an 
+overall diagnostic of the health of the system and its constituends. We mantain key 
+tests as a whole or over its components, sometimes we need to do it manually or more 
+commonly by automation. 
+
+We might be constructing our brittle prototype, or already in the path to production, 
+through architecture or through ingenieering, our even mantaining a our working machinery.  
+So, when should we test manually, automate, run them, at which point we need to introduce 
+it and at which granularity ? 
+
+Some years ago started a fad around test driven development, which stated it was sensical 
+to firt create a test case for every not yet built functionality we must include, ensure 
+it fails, then build, then ensure it pass the test, from the ground up. Building our basic 
+functionality, API and architecture bottom up, intermingled with intensive preemptive testing. 
+The community took this rules too literally, and tested the hell out of it, and beared the pain, 
+from paycheck to paycheck. 
+
+
+					Driving Contrarians
+
+We, as rogue engineers and as programmers of each of the noble klans, shall be wiser. Our means 
+ar modest, and our energy easily disturbed. Every manual tests, if our design is not fitted to 
+single action checking, requires us to do a sequence of manual operations, which is not only 
+boring and painful, it's also inneficient. But, wait. Do not  yet automate. Be prompt to design 
+in a way if can be suited that do not require a state to be reached by hand to just run a given 
+functionality, keep as stateless whenever possible to not be forced loss loads of time, to give 
+back beforhand the sand to cronos. Another property we design for is to not carry the load of 
+building a complex setting to test by hand through our app's GUI. We prepare with propper setup 
+to run tests without GUI interaction, to obtain fast status. 
+
+IF we were able to do it, we get relief our load, we don't urge to automate tests to early, as 
+test drive propposes. Some might say we might build our tower over faulty components, and then 
+fall at large,  and that could be certainly the case. But, do not foul yourself: every test 
+is subject to maintanance as every other part of the systems, they are brittle too, and worst:
+you double your load over and over when your architecture and functionality is not solid, and 
+is subject to refactoring and scrapping. That will occur all along in our path to a promising 
+prototype, and to production. If we automate tests early, we are granted to scrap giant bulks 
+of test cases. So, we are clever to postpone test case coding as late as reasonable, as long 
+as we are comfortable tthat our code base mostly work without much additional work on manual 
+testing. As soons as we feel unease with the beast walking, as the machinery halts to often, we 
+reach the point of resignate to test automation, and as complexity gets over our code base, 
+as its grow, and is closer to production, and as we cannot reason across the whole system 
+the cascade effects of our changes, this seems to a sensible approach regarding the timeline. 
+At some point complexity wins. We then enact sisiphus to the top of the mountain, over and over.
+
+Contrary to the test driven approach we refuse to test at granularity fine enough to just waste
+time on mostly trivial funcitonality, but the question arise. What is too trivial ? were to 
+drive the line ? The sensical answer comes in the reversal attitude. We should test Top Down, 
+and start just at Top, is core whole system functionality work ? If it's most of the time a yes,
+and that matches our tests, then we return to our construction, as programmers or architects. 
+We remain testing by automation, just at top level. If our machinenery holds it's required level 
+of accury, we are fine, at the top. If it starts failing, horizontally at new funcitonallity 
+too often, then we automate horizontally, unless we can get rid once and for all with the faulty 
+aspects of the system, as a whole. 
+
+We don't count with a huge budget, we don't relay on teams with lack of expertise that constantly 
+introduce failure there were no one has a complete view,we can't work and tinker properly and adapt 
+that way, it's to expensive, and we  loss our flow, and we are subject to deplete pir emergy once
+and for all. Our experience allow us to take care of problems at the proper level, where they occur, 
+we have a full view of the system, since we built it. 
+
+When luck abandon us, and we are having problems due to unsafe roots, when the cracks proppagates 
+from the a bottom level, when the roots seems failing, we descend, and construct automated tests 
+at a subsytem level, as high as we can, and only if we cannot get rid, as before, with the faulty 
+inners once and for all. Then, as before, we test horizontally on fail, and down again and again.
+Always knowing that as down we go, our rock gets bigger, our path is longer. We are not civil 
+architects nor civil engineers, their towers are solid, they render unusable and unsafe with a wrong
+root, their errors are crytical and expensive as early are made, the shall measure twice, 
+and cut once, everyone, when unsure an step taken, they won't never again rest well. On our domains,
+we can solve problems at any layer, we can inspect an change the whole tower with a small correction. 
+
+And that our testing constructs are neighboring crystal castles, easily teared appart by simple refactoring.
+We are not So, we test, slowly, from top, then horizontally, then down and horizontally again, 
+i.e., branching first, with a top down traversal.
+
                                    TO BE CONTINUED
 
 
