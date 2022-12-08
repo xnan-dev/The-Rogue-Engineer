@@ -547,6 +547,78 @@ And that our testing constructs are neighboring crystal castles, easily teared a
 We are not So, we test, slowly, from top, then horizontally, then down and horizontally again, 
 i.e., branching first, with a top down traversal.
 
+			 Planarity
+It started with an empty file, which sprouted in a flat surface, then it left that plane 
+to rise into hierarchies, which stablished a sense of grouping, layers of abstraction 
+and discurse, and overall sequenced sets of behaiviors, and names multiplied. That's all good,
+everything makes better sense once named and organized. Well, at least as long as we gave 
+birth to those hierarchies, and not too long ago. When we face other fellow's designs, their 
+monumental mess of segmentation and interrelation of verbs and nouns, it is dawnting, where 
+it starts, what's the core, and what's peripherial, what is is the unspoken allowed paths for 
+obtain a desired result. 
+
+Methods states and interdependencies are hardly clarified.  Documentation, in most cases, is 
+insufficient. But, even so, how is possible that while two programmers have the training, 
+the ability and the expertise to architect any machine, they hardly ever build a similar 
+design, structures are differents, naming are chosen from dissimilar analogies, arguments
+are arranged in other orders and places, in one design something takes an argument while 
+in other that is carried through hidden state, some concepts emerge in one as a unit, in 
+the other it's parts aer disgregated in a mesh with apparent unrelated fragments of 
+functionality. 
+
+It is a lost battle to expect clear communication through code betweeen programmers. 
+It is as if we design taking random elements of a set of parts of functionality, 
+mathematically speaking. Two complex hierarchies are not only just different, there 
+is no way just to map one other, it is not a matter of adapting one to the other, 
+there is no injective way to jump from one to the other. We spoke different languages 
+with no common ancestor.
+
+After designing good and large, we enjoy for some time the company of our metaphores 
+and concepts, but hate other's ones. Maybe that be the cause that we feel releaved when
+we just face simple, primitively structured frameworks and libraries, where almost no
+hierarchy were erected. We find humble functions, with arguments, no state, and clear 
+documentation, to the point, and evne so, with examples and discussions. 
+
+A good example of this is PHP standard library and its documentation, no one ever gets
+lost there, you just get what you need, in a simple manner. It's rare the case where
+they build a complex structure. It seems to be all craft with not only expert hands,
+but wise minds. If two minds envision a functional module differently, metaphors are 
+mostly mappable between them and the jump from one to the other is reasonably doable, 
+and we mostly understand each other, as we where just using a slightly different 
+dialect and prose. 
+
+We shall learn from that humble disposition, stay functional and modular when we can,
+stateless whenever possible, to allow straighforward use, and ease of analysis. If we 
+hold to that simplicity, our work is a joy for others, and for our future self. 
+We avoid to climb up to build unsurmountable puzzles and seed babbel's fate. 
+As programmers, we should have an endless long for simplicity. 
+
+Two planar designs are far closer even while constructed using disimilar prorgramming
+language than we designed with the same one but under complex hierarchies.
+While you might need a more complex structure and behaiviour, it's trivial to just 
+compose thorugh that kind of planar tribute to functionality. 
+There is a practice seen on some horrendous design that consist on provide helper 
+methods which compose the misterious instances that are required to be built to obtain 
+a desired result, they provide paths to apparent simplicity through complex realms.
+
+We decide to do the opposite, provide before hand plain simplicity and functionality,
+and let the coming architects to do they craft as they will, upwards. We are humble,
+we strive on simplicity and move forward. 
+
+Another way to build rare puzzling  functionality is adding functionality through 
+a pattern called decorator, each layer of the onion, composes for additional behavior.
+We are force to navigate the hierarchy to figure out the right way to combine that 
+partially usable set of classes. We can take relieve our fellow companions of that
+experience through a clean exposure of direct functionality which takes the care 
+to reuse the parts of the design needed for their needs without the unpleasant 
+work solving the puzzle. 
+
+Planarity, we insist, aids the separation of bare functionality built by our rogue
+programmer from the architectural work. And if we find our self working much time 
+on the architecture and not much on the core barebones  functionalities, it's clear
+we took the wrong path. When we just have complex structures, functionality 
+and design are intermingled, and we easily stray from the best route.
+
                                    TO BE CONTINUED
 
 
