@@ -619,6 +619,87 @@ on the architecture and not much on the core barebones  functionalities, it's cl
 we took the wrong path. When we just have complex structures, functionality 
 and design are intermingled, and we easily stray from the best route.
 
+			Caprices
+Even on the deep state of flow the rogue programmer enters,
+invisible but vivid structures and machinery emerges that tempt 
+him to expand beyond the razor blade focused constructrive process
+at hand. While dedicated to translate  into code a matured, 
+well defined functionality to step forward the prototype 
+or beyond it, lateral ideas pop up, that while easily described 
+at a conceptual level can make a huge dent on his available resources.  
+
+If he were working for corp, it wouldn't be a problem, the programmer, 
+the architect, serves at with a sense obligation, he feels forced 
+to compliance to an external plan, chosen by other members of the team, 
+and it is certainly the case. 
+
+Now and then, he really thinks that can pitch the expansion to whom holds
+the responsability and the final decision of the current scope 
+of the system. We, unfortunelly, are not subject to such safeguards 
+of our creativity, so we risk to deplete our energy and stall attending 
+such internal voice. That inner voice might spoke us about new functionality,
+to architect a better design, more flexible or more consistent, to aleviate 
+our load of a not so frequent deployment process trrough automation, to replace 
+components with more solid alterrnative, or whatnot. We must as depart from the
+path our ship from the charming call of that digital sirens or to navigate 
+closer like Ulisses but wax our ears to a barely manegable madness.
+
+Insight can save us analysing alternative paths which don't involve forbing 
+time coding, it can be mantaining manual occasional processes in place. 
+It could be to relay on current infrastructure limitations, to avoid inpractical
+purism, to take non verbose coding approachs when suitable. To work with 
+simple tools which limit or powers to rework architecture, to introduce splits ,
+renaming through IDE supported refactors unecessary an on a tiny project.
+
+One approach is to resist the call through will power, and keep somehow focused 
+on the rational decisions made before, by others or us playing a different role.
+Another mean is to break the flow and depart from work in favor of of dispersing 
+the mind with physical activity, to simple walks, to meet friends, to play 
+with them or hear the vague or unrelated topics, to nature contemplation or 
+to take the joy to play with the noble beasts, dogs, cats, or any silent 
+but empatic animal.  
+
+A third strategy is to suspend all project activity for a few days  if we are 
+too immersed in the project, working long hours or taking selfishly every weekend 
+and sensical rest, that can give us back balance to atend other relegated aspects 
+of our life. Limiting our efforts can make is more effective while forcing as 
+to take wiser decisions to get the project moving. Too much time available can fool
+us to ponder time as cheap comodity. 
+
+There is a hidden ratio between straightforward pragmatic construction ana grandiloquent, 
+expansive design. That ratio express itself as a proportional penalty in code navigation,
+in our human limitations of memory capacity and low bandwith betewen our minds, our fingers
+and the computer input. Worst of all, that ratio directly express itself over the timeline,
+to discourage us and puts at risk the whole project. 
+
+Another way is just draining ideas in  a architecture old fashioned paper notebook, to capture
+them in a postponed but possible path programming or engineering note book or just drop them
+in a instant messaging private channel  for a blazing fast and cheap notation. That will silence
+our inner voice, to let it feel that ist has been heard and the proposal has been properly noted 
+and its efforts have been recognized and its work  won't be lost. In both cases, we would feel 
+relieved and can continue as sensible creatures. We postponed the potential disaster.
+
+The ideas will cool sooner or later, and we can revisit them when it lost it's shiny
+reflection in proper role and mood and sense of direction.
+
+Competent friends on the field, engineers, devolpers and architects,
+people with project manager experience, can offer us from the distance 
+necessary perspective that our narrowed menial but due attention to detail 
+private us from.
+
+To subject our work to short iterations tied to an expected timeline 
+with incremental, staged,well defined and necessary deliverable functionality 
+can inmensely aid. It's a rough corset that might be an undesired but final solution.
+If we get tamed our hearts, the drift won't take us to obscure shores. 
+
+If we sucumb, roles will be mixed, details will  likely get unantended, 
+planed timelined turn in wishful thinking and will get expanded, partial
+functionality might appear in the code base. Development gets a mess 
+with tangled functionality expressed in complex commits or spawn 
+of branchs for future completion. 
+
+Paginini's caprices are a  sublime gift. Our caprices are just curses.
+
                                    TO BE CONTINUED
 
 
