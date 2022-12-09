@@ -778,7 +778,36 @@ then we can just stay at code neighborhood in the company of our techy, savvy pr
 and masons. We let others who work on giant corp teams to expose his users to dounting 
 circuitery, we remain humble and grow wiser.
 
-                                   TO BE CONTINUED
+
+Ingredients for Digital Recipes
+
+Most machinery, libraries, frameworks and components require a collection of settings 
+to to be providade to work properly. As stated, if we were sensible, we took the care 
+to provide reasonable defaults. Unfortunelly most machinery we built make a mess of it,
+tangling operatory functions and methods with setup and preparatory ones distributed 
+in class methods and constructors. More over, making things worst, most machinery require 
+partial provision of such settings collection and some method call sequences fail 
+due to incomplete or incompatible setup selection.
+
+One way that could make ourselves and others life easier, to allow us to craft our  
+building is to separate, to split both methods types introducing a settings class which 
+clearly allow every supported option in a straightforward manner to be set. That gives
+the API user a clear overview of whats possible to achieve, it gives a clear place to go. 
+
+Even more, that metioned concetrated settings can be made immutable, that avoids the risk 
+of too much sharing of state.  In most cases those settings can be provided on class 
+constructors which depend on them. Default settings can be also concentrated there or can 
+be easily found which IDE aided reference searchs. 
+
+The same applies to nuances on the options of each setting, comments could be provided 
+in place. As builders immutablity on this topic  likely not bothers us with considerations 
+of performance since setup is something that occurs now and then, not constantly. External
+access to those settings can be easily mapped from storage or XML, YAML files or the like. 
+For the many of us, just keeping this simple, providing settings through code is felt as
+a bliss. In this case, the additional overhead of splitting related functionality 
+might be somethin desirable.
+
+TO BE CONTINUED
 
 
 ```
