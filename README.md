@@ -619,6 +619,21 @@ on the architecture and not much on the core barebones  functionalities, it's cl
 we took the wrong path. When we just have complex structures, functionality 
 and design are intermingled, and we easily stray from the best route.
 
+Our disposition to choose plannar structures should not only be related to 
+code structures, the same applies folders for code organization and resources. 
+In relation to code whe folders are plenty, shallow  and deep, we have to bear 
+the cumbersome task of moving back and forth throug the folder tree, it won't fit 
+in screen and we will have likelity to collapse at different places to make it 
+more manageable. if the tree is big enough, and frequently used folders are spread 
+across it, we might be forced to collapse, expand and jump between branches 
+of folders, it worsen as the structure gets deeper. If the language at hand uses
+packages or namespaces, declaration of dependency and usage by path is painful 
+(unless we are working with the aid of IDE that handle that for us. Of course,
+there might be good reasons to mantain such classification, it might be due to 
+expose a well cut modularity, or to organize properly resources.  We just have 
+to keep in mind that shallow tree structures might be a constant penalty while 
+working on the project.
+
 			Caprices
 Even on the deep state of flow the rogue programmer enters,
 invisible but vivid structures and machinery emerges that tempt 
@@ -699,6 +714,69 @@ with tangled functionality expressed in complex commits or spawn
 of branchs for future completion. 
 
 Paginini's caprices are a  sublime gift. Our caprices are just curses.
+
+
+			Just figure it your self
+
+In TV series Seinfeld, a guy comes to Jerry's appartment  to measure, 
+design and install a set of cabinets, every two seconds, he asks Jerry 
+to make a choice to the most minuscule irrelevant detail, he drives him 
+completely nuts. As exposed in the TED talk titled "the paradox of choice", 
+as more we have to choose, we feel increasingly unhappy, we tend to 
+feel releaved with a subpar picking  that requires far less decision
+making. We face the same chore when dealing with components, libraries 
+and frameworks, and expose others to the same when designing over 
+flexible software pieces. 
+
+At design time it seems clear that we should not reach the point that 
+we put more effort in the support for flexibility than to the core 
+functionality, if everthing is externalized we might end up with trivial 
+functionality that in the eyes of others won't worth the effort to figure
+out , they might just pick a simpler solution or just rewrite to fit 
+their needs. Adapters, factories, IoC, code generators, console tasks, 
+interfaces, xml setups, abstraction layers, requirement to make repetitive 
+use of boilerplate  code,  leads us in that direction. Complex state setup 
+through object interdependencies and implicit dependendence method call sequences, 
+nagging exceptions that users puzzled. Some times the setup has just too many 
+ways to fail, or worse: too many ways to partial fail and obtain unexpected results. 
+
+We face then, when architecting software, the need to ponder the non trivial 
+trade offs between flexibility and simplicity and between ratio of core functionality 
+vs. extensibility and to be prepared for change. Design for change mantra for use, 
+rogue mason architects, is unacceptable, our time is precious and our energy can be depleted. 
+ 
+One way we can retain the best of both worlds is to provide reasonable defaults 
+wherever we can, we can make our machinery to stand on, usage can be straightforward 
+from fabric, with a few lines of code. We can avoid to bother others and ourselves with 
+the chore of preparing a daunting structure of folders, placeholder files, settings 
+files with tons of configuration and boilerplate code.  
+
+Preemptive care to prepare for future change can be done many times without the 
+reliance of third party abstraction layers, IoC and extensive configuration, we can 
+humbly implement plain modular function sets hardwired in a very concrete manner 
+to the current component API calls. So, we just bridge from everywhere throughout 
+this module to avoid cependeny on the currently required component's API. When winds 
+of change arrive, we rework the module and move on.
+
+Even if we follow blindly the prepare for change mantra, and expose massive 
+configuration, factories , and IoC hooks, it might just be the case that after 
+such hassle, the component that future brings us cannot be well fitted. 
+
+Regarding to abstraction, there is an amusing example in Java, a double abstraction
+layer called JPA over SQL management, the first layer abstracts the SQL per se, 
+the second one abstracts different ORM mapping solution (there are just a few). 
+
+It can easily made the point that the ORM mapping solutions offer a too simplistic 
+solution to work reasonably well,  it just maps mostly trivial queries and users are
+forced to be exposed to work on both layers since the claimed clean, higher one cannot 
+manage a great deal of the tasks needed. 
+
+We can do better. Explicit exposure of optional settings with in place code documentation, 
+are far simpler to use than a foreign, lousely defined non code configuration files. 
+Are those settings likely going to change without the company of code change? if not,
+then we can just stay at code neighborhood in the company of our techy, savvy programmers 
+and masons. We let others who work on giant corp teams to expose his users to dounting 
+circuitery, we remain humble and grow wiser.
 
                                    TO BE CONTINUED
 
