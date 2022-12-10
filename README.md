@@ -807,6 +807,70 @@ For the many of us, just keeping this simple, providing settings through code is
 a bliss. In this case, the additional overhead of splitting related functionality 
 might be somethin desirable.
 
+Failing gracefully
+
+Prety much every IDE supports interactive debugging, we all sucumbed to it in
+cases where we tried better weapons and failed. Depending on the nature of the 
+project it might be the only way to treat an unwanted result, we might 
+be leading with a complex UI that is by nature stateful and we cannot cut to 
+the point we need to evaluate, so we just round the problem in closer circles 
+jumping between breakpoints, and a frame to frame approach and careful 
+inspection of the system's state. 
+
+Other projects allow by design to just get a full run either by automated 
+test calls or by direct UI request or non UI single calls. If that is 
+the case, and if we have a deep understanding of the project design, 
+we can just drop log info in the key parts of the system to understand 
+by direct run a sequential track of what happened, we can inject exceptions 
+to obtain traces to identify a problematic active path in the system.  
+
+A few iterations tinkering with log info can give us the answer. 
+With some practice, this approach tend to be way faster than 
+the interactive debugging for many issues. We just go to the point, 
+check what happens, iterate, and fix it, then rollback the hooks 
+we made and we are done.
+
+A step forward can be taken if we wire crucial tracking 
+of information to log files or well structured databases, this not only
+allow us to tackle a hot problem but to check for past failures. This is
+particularly important if, by the nature of our system, we need 
+to inspect a well known path over and over, if we have to inject 
+code to prepare for a given problem in several places. 
+
+We can also, include a settings class for enabling certain types of 
+debugging information and behavior, for example: forcing rollbacks, 
+exceptions, states, unexpected failures, etc. That way, we don't loss
+the efforts we made to fix a single issue or inspect for proper functioning,
+just keeping a reasonable sets of hooks in place that can be activated 
+when needed. While this kind of practice is not common, it can certainly 
+speed up things for a small team trying to move forward. 
+
+This approaches should, though be very well organized since by the nature 
+of the extension we are making, it gets tangled with the functional code. 
+As example, if we decide to log an event which includes serverity, stacktrace, 
+exception message, and more, it can take arount ten lines to setup, 
+if we directly include that code in the function at hand, that function 
+gets highly polluted, it's better to separate this kind of treatment appart 
+in auxiliary well named methods.
+
+We have then to ponder the trade offs, IDE's interactive debugging, 
+on time tracing hooks and event tracking with permanent support 
+for debugging.  The best pick is not always the same, sometimes
+the best path is going interactive, some times with test cases, 
+some times hooking and logging, etc. 
+
+The same way event driven development prepares the code base for fail, 
+we can prepare as well but as we move forward  realistically exposed
+to the failures the system face. We do it ot with expensive or 
+unrealistic brittle test case setups, we can just wire for inspection 
+in normal use activity.
+
+Hooking points wired in the system gives us also the possibility 
+to prepare for partial failures, to move on as a whole with useful 
+work instead of failing hard. It can aid to excercise scarcely 
+ocurring events that can be oversighted. 
+
+
 TO BE CONTINUED
 
 
