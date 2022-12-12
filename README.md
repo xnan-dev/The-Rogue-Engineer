@@ -870,6 +870,131 @@ to prepare for partial failures, to move on as a whole with useful
 work instead of failing hard. It can aid to excercise scarcely 
 ocurring events that can be oversighted. 
 
+Of course, being able to mantain an useful settings by code capability 
+depends on the support from the language we work with to dynamically 
+include new source code to the running environment. All scrypting 
+languages supports this by nature, most with suppurt for JIT, dynamic 
+linking also do it. In the case our machinery needs a build 
+through compiling, transpiling or the like, if we need to deploy
+a full package of the software at hand,  the usability of settings
+by code support might be reduced due to the overhead of time to deploy, 
+specially if it is frequently tuned. Storage Structure, design and 
+Backups (devel) Depending of the nature of our prototype and objective, 
+we could need some kind persistence storage. In the early days 
+of prototype implementation we can be tempted to just alter the 
+storage structure design by tinkering with a tool which supports 
+that storage for data inspection and design, (ex. SQL administration
+tools). Working that way leave us with no track of structure changes 
+(not to mention the testing data per se). Making things worse, that
+structure is not stored in the control version system that we use
+for the source code. 
+
+A simple solution for our rougue project is setting up a backup solution
+for our storage, it doesn't matter which one, they are made to handle
+the task. It is wise to setup a rorative backup mode to have enough days
+of history to get back to a working structure and data set in case
+of disaster (and to also protect us even in the case we don't detect
+the problem until some time pass. Suggesting backing up storage seem 
+like a trivial, every body knows advice. Still, we are not talking
+about production systems, we take this consideration for development 
+process even while prototyping and not just for data which might be
+irrelevant to some extent in a pre-production stage, we take into
+consideration structure changes. 
+
+Once we advanced on the workings of our machinery, running environment 
+sprout for different stages of the system, somes might be as unestable
+as the ones dedicated to the latest development, other,somewaht  
+more stables, for testing, preproduction presentation, production etc. 
+
+In these situations, we might have data and structural differences since
+the environments are likely to be our of sync.  
+
+So, we have the problem of propaaggation of structure and relevant data
+from one environment to the other. For small projects it might be the case
+that a diff between data backups (or just structure backups) will do
+the trick. On others we might be forced to keep track of structural and data
+change manually and explicitly following a strict well defined process. 
+
+If it's worth it, we might even relay on a storage schema definition 
+with support for versioning, either custom taylored, provided by third 
+parties or integrated with the platform we use.
+
+In the case of storage design applies the known mantra of keeping things
+closed to modification and open to extension the same way it applies 
+to coding and architecture work. If we keep each structure backward 
+compatible (i.e. restricting us to expansions of those structures), 
+synching storages is rasonably simple. Whenever we don't, we have to take
+the load of constructing cumbesome migration jobs, update scripts 
+and code changes, that should be carefully applied to each environment 
+when needed.
+
+An approach that we can take to retain backward compatibility 
+in the case of SQL is exposing and using views to access data, that way,
+in the face of structural change we avoid the need to change the
+code base. The trade off, tough, might not worth it, since view
+definition are not very comfortable to define and update.Sso this 
+approach should be pounded carefully.
+
+As always, we have to taking account the trade offs: Backward 
+compatibility could mean a polluted or subpar design while the 
+alternative means breaking things unexpectedly and additional 
+load beared without additional functionality.
+
+A common practice which is worth to mention to whom don't know it,
+is to contain storage functionality well separated from the rest 
+of the code base. That way, in the face of change, there is just
+one place to go, it also means that it is easier to mantain 
+a consistent approach in storage access. 
+
+If the code is spread, when storage means change either by structure
+or technology, we face the error prone and cumbersome task of identifiyng 
+çand change every place throughout the code base that access storage.
+Some access methods, like the onces exposed through ORM solutions might 
+even be subtle enough to make it pretty much untrackable. The additional 
+effort to isolate storage is a good practice in most cases. 
+
+Storage selection, it's design and it proper acccess through code are mostly 
+in the domains of engineering and architecture, Changes in storage technology 
+and design commonly have a metoric impact in the code base and stall the
+development for long times .So, don't be casual on it taking decision on the
+matter while being in the flow state of coding.
+
+Another aspects that make our storage decisions complex it the fact that 
+each storage solution have it's limitations on the kind of work that can
+handle correctly. While in coding preventive optimization is deemed as capital
+sin, in the case of storage, we face the problem that for some kind of tasks 
+the wrong selection can render the whole work done useless. 
+
+For example an SQL storage might not scale to the point we need if we have
+to deal with huge datasets and table joins. Extensive calculus machinery 
+that depend on storage can not be usable if we read/write massively, 
+oeven remain too slow if it requires constant interprocess communication and 
+type conversions. Without a non standard storage soluction  that kind of project
+as others, can be unfeasable. So we can be better of standard solutions or we can
+need one in particular, many types of storage or it could be the case
+that anyone might do the work.
+
+But wait, not so fast! It, all this considerations not mean that we should 
+optimize preemptively. Our first strategy writing queries or doing API calls 
+should not to performance oriented,  simplicity and functionality is normally 
+a better approach. That can optimization can be made when it probes to be a need,
+when it imposes a bottleneck, since we can do it without the penalty of 
+rendering all other code useless. 
+
+There are other aspects while prototyping our machinery in regard to storage 
+that requires care. That is the case, for example, of constraint definitions 
+like foreign keys, primary keys, additional unicity constraints, type length
+restrictions, indexing, etc. Most of them if we are operating in  pure rogue mode,
+can be postponed and introduced progressively as the prototype or product matures.
+
+Some of these mentioned aspects while likely needed when we reach production, 
+can make a dent on our time and energy available. 
+
+A final consideration is to avoid designing storage casually. If we have a clear
+vision of the machinery we are going to build, asuming the role of storage designer 
+and take the time exclusively to structure our storage well. That is more effective,
+leads to a more consistent design and better supports the coding tasks to come.
+
 
 TO BE CONTINUED
 
