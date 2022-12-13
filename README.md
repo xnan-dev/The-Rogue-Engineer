@@ -778,6 +778,25 @@ then we can just stay at code neighborhood in the company of our techy, savvy pr
 and masons. We let others who work on giant corp teams to expose his users to dounting 
 circuitery, we remain humble and grow wiser.
 
+The most embarrasing case I stumbled upon of not figuring it youserlf is in traditional 
+email server. Somehow the responability of discovering the right combination of a thousand
+setting options is relegated to the server admin, just to control spam filtering 
+we have hundreds of flags to tweak, a minor adjustment can lead to incorrect 
+mails filtered. It is incredible that we still relay on POP, SMTP and IMAP protocols
+defined in the late 80s. The email server's gazillion setup options smells damn funny,
+the same way the offer of uncountable stock market strategies make the whole field 
+of finance advisory look extremely fishy. Before we go smacking email server providers 
+it is worth to consider that the underlying protocol design has fatal flaws which 
+drives out the implementation of an ultimate solution.
+
+We can point out a single major problem: the lack of a contact list for each 
+email account (as a personal list of contacts we trust), and the fact that there is no protocol
+to connect and authorize sender and receiver accounts, this two aspects make each mail 
+a potential threat and an absolute mess to classify (it's quite obvious if we see every 
+social network that does not suffer that problem like facebook, instagram, telegram, etc). 
+Whatever the reason we ended up with such mess, we doomed server administrators 
+to constant monitoring and tweaking of mail servers.
+
 
 Ingredients for Digital Recipes
 
