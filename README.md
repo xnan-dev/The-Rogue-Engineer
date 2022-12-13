@@ -1015,6 +1015,41 @@ and take the time exclusively to structure our storage well. That is more effect
 leads to a more consistent design and better supports the coding tasks to come.
 
 
+Automation
+
+Surrounding any project, there are tons of operations that can be automated. 
+We can think of deployment processes the the relevant environment, building processes, 
+night builds, running tests suits, chronic storage backups, updating libraries, 
+updating system packages, and on and on. 
+
+We, as eternal seekers of the perfect machine, want to automate just everything. 
+Unfortunely, we are subject to a life span and we have priorities for the project 
+and why not other interesting things to do. So, where should we drive the line ? 
+
+There is, of course, no final answer, it depends on the resources we have and 
+the amount of time we spend doing each manual task, it also depends on the risk 
+we take while doing manual task due to our propensity to make slim and fat mistakes. 
+
+As rogue programmers, in most cases, doing it on demand, due to boredom on repeating 
+each task over and over and feeling we are wasting too much time. This can go well as
+long we have a critic eye to spot when we are loosing precious time for marginal gains 
+and smack ourselves back on focus.
+
+For projects in a budget it is more a hierarchical decision tree, at best 
+some what negotiated.
+
+It's is interesting to point out, that across all software categories, there 
+are always aspects that are required to be automated. It's a cross sectional 
+aspect mostly beyond the scope of a prototype build. 
+
+Being that the case, we can expect that there are tons of dedicated tools already
+build that can fit each task. Still, we should be cautious, having a tool that provides 
+a solution for automation doesn't mean that it is the right decision to use it. 
+It might not be cost effective under the circumbstances we develop, it might require 
+time and dedication to set up properly and to maintain it that could be prohibitive.
+
+The perfect machinery is out of reach, we automate far from perfection.
+
 TO BE CONTINUED
 
 
