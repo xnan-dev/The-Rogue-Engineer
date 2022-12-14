@@ -5,7 +5,11 @@
 	            * maturing prototypes *
 		  
 		  
-                           0. spark
+
+                             Spark
+
+ideas,initial exploration,viability,energy,concept model,prototypes
+
 
 The physicist programmer might want to make a computer simulation 
 for a given model he has in mind, the mathematician could be give 
@@ -38,7 +42,10 @@ This voracious creature feeds from fingers, mind, time, and code.
 
 
 
-                        1.   then light
+                          then light
+
+concept model,prototypes,prototype iteration,viability exploration,
+minimality,flow,energy,version control systems
 
 
 As closer we are to the a concept model and to the prototype, 
@@ -75,7 +82,10 @@ return from. So, a version control system enters the game and
 we get bored we it’s simple albeit bureaucratic setup. 
 
 
-	          2.           Protos
+	                     Protos
+
+simplicity,prototypes,real world,hard wiring, miomic perspective
+
 
 If we are lucky, and our mind is, at least this time, focal and our 
 adventure path is not too foggy, we have a broad direction to trip away. 
@@ -105,8 +115,14 @@ tight function-like components, than from mature but complex components
 hard to integrate.
 
 
-		3.          Our Domains
-		
+		          Our Domains
+
+unknowns, learning, new tools,new components, new languages,
+incomplete documentation, boredom, stagnation, frustration, 
+building vs. learning, experienced use, optimistic to novelty,
+manual procedures,flow breaking,back pedaling, building vs. using
+
+
 As a gaucho rastreador in la pampa,a kind of cawboy in the remote 
 south of the 19th century, we know our land, what tools we have, 
 languages, storage, command line tools, API services, OS, components 
@@ -193,7 +209,12 @@ and a cathedral dominates the village.
 Our beloved prototype must suffer a brutal dissection. 
 
 
-Hardwired
+                                   Hardwired
+
+exceptions, tangled functionality, APIs, isolation, simplicity,
+future guessing,design patterns,static code,dynamic code, foreing
+API independence, IoC
+
 
 Unforntunely, there are aspects of what takes us beyond a prototype 
 that are unconvinient to isolate. Exception handling is one, it just 
