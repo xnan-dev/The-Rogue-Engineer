@@ -1071,8 +1071,178 @@ time and dedication to set up properly and to maintain it that could be prohibit
 
 The perfect machinery is out of reach, we automate far from perfection.
 
+
+
+Contrarian view on Optimization
+
+premature optimization, flow, energy, *weight dragging, tradeoff,  
+corp optimization needs,enginnering needs vs. programmers needs,
+*miserable experiences,project manager view vs. programmers view, 
+*role bets,role blindness, *crytical paths, *hot spots, 
+*well documented risks, right place to optimize, 
+*right level role to optimize, *embeded profiling.
+
+
+The old mantra wisely declares that premature optimization 
+is the root of all evil. It is a sensible approach to avoid 
+droping code optimization just for the sake of it. 
+Even if easily done, in most cases it results in added 
+complexity to code, forces readers to lateral thinking 
+and ephifany dependent understaning, it rises the risk 
+of subtle misbehavior of our carefully crafted machinery. 
+
+Since suble failures tend to need prolonged times to 
+express themselves, and since might take our task at 
+hand for done and advance completing other tasks, 
+things get out of hand easiliy. It can introduce one 
+of the most feared issues: irreproducible failures. 
+
+It can sneakily crawl to production, and put us on 
+the stressful situation of receiving 24/7 alarming
+urgent call. After these chain of events, our detective 
+efforts to find root causes can render futile, 
+fails will lurk in the shadow for long times
+ if not for ever. 
+
+ Those failures might lead to hard to debug, 
+ hard to fix, instability. 
+
+In that hard position, it can force us to back 
+pedal to remote history of our codebase, to try
+to find the point in time that inestability got in.
+
+It can force us to review carefully codebase changes 
+from that point on. The circumbstances con obligue 
+us to aggresive test case development to try to 
+Wrong behavior can undermine feith in the project 
+in the view of others and even ours. It can throw a shadow 
+of doubt in our technical capability, attention to detail, 
+it can render us as sloppy or careless guys. 
+
+And what for we might ask ? If optimization was done
+blindly, it is highly likely that it resulted in marginal 
+gains, no gains or even detrimental performance. 
+
+All that said and taken seriously. We now look at the
+flip side of the coin. There might be the case that 
+optimization is nontheless needed. The most mandatory 
+reason we can expect is that the current performance 
+level of a given part of the system renders it unusable. 
+
+If that is the case, PM role will take hands on 
+the matter and priority it make it solved. 
+
+It might be an engineering decision if it seems 
+to affect the usage of the system to some tolerable 
+state or can affect an expected future service 
+expansion and resources can be reallocated to solve
+it before it turns into a real problem.
+
+On a small enough project, in independent team, 
+in a rogue project, in a one man machinery, it might be 
+a good idea at sub architecture level. It could be the
+case that while the project performance has no real world
+usage implications, it is impacting nontheless the developement.
+
+Bad performance might lead to slow moving team, 
+it can stall new features delivery, it can affect 
+problems treatment. It can destroy flow. It can lead 
+to boredom, apathy, low energy, it can risk commitment 
+to the project, it can risk the whole enterprise.
+As already said, without corporate incentives, mood,
+interest and energy are key. 
+
+Recovering flow might not be something that a PM or
+engineering time atend to. But for seasoned programmers 
+is must. In the case a role is filled by someone 
+not seasoned in its surrounding roles battles 
+blindness is pervasive. 
+
+At each role there are plenty of blind spots. PM are mostly
+blind to technical issues, Engineering team are
+mostly blind to sub component architecture flaws,
+ architecture designers are mostly blind to subtle 
+ programming pebbles. 
+
+Experience rogue practitioners do to the long 
+involvement of mixed roles, perspectives and 
+responsabilities have a better understanding 
+on crytical problems even if their approach 
+are deemed as unorthodox in the eyes of corporate 
+practitioners. Well, that happens when they venture
+to raise their heads over their current eagle 
+eyed focused attention to detail.
+
+Flow can be regained throughout optimization 
+non required by PM and engineers. To obtain that,
+we need to properly identify the root cause 
+of the lost flow. It might be a slow third party 
+component that can be replaced for a more 
+performant one, we might need to immerse us in
+its domain to rewrite it to our needs, if we 
+have enough resources at hand. 
+
+It can be circumbented in some cases by discarding
+non crytical features at PM or engineering level 
+with the consequent drop of the limiting components. 
+We must carefully profile the application with 
+proper tulls an thoughtfully evaluate if the 
+we can afford the optimization and its consequences.
+After optimizing, we should recheck with proper 
+profiling the effort resulted in a worthy improvement 
+and be ready to back pedal if it is not good enough
+to give us a relevant gain, ignoring the sunk
+cost incurred.
+
+A good practice, altough not a common one is to
+provide also a way to disabling punctually 
+the optimizations made, we can even have a central
+setup class or configuration file disable instantly 
+a given optimization. A very simple case is when we
+have one or multiple layer of caching. While
+performance gains can be huge through caching 
+techniques, it can lead to subtle inconsistent 
+states and responses. Caching layers and contexts 
+can be spread in a greyscale risk taking. Thus, it is
+likely to be a good idea to provide others and us
+the benefit of counting with fine grained control 
+panel for caching.
+
+In general, we can even go as far as to restrict
+the optimization processes to occur in development 
+mode to avoid incurr in the risks involved after 
+applying those optimizations at production. It could be 
+also a good idea to just use the optimizations in non
+crytical but frequent processing that ruins flow. 
+
+There is of course a tradeoff to evaluate, for a 
+given optimization, supporting a non optimized working 
+mode leads to a bigger codebase, more test cases,
+and more code to mantain. Again we have to ponder 
+the risks, the benefits and decide wisely.
+
 TO BE CONTINUED
 
 
 ```
 
+***** IDEAS ******
+
+mantener branchs a mano
+DETALLAR freezar desarrollo: no seguir expandiendo un prototipo sin tener una version productiva estable. Una vez freezado, solo agregar fixes.
+DETALLAR tiempos de roles: segun el rol , hay que dedicar mas o menos tiempo
+DETALLAR no desarrollar ideas a medias, solo solo cuando uno está bloqueado
+
+***** HECHO *****
+
+DETALLADO: performance no solo por demanda productiva sino para mantener flow
+DETALLADO: planar: usar estructuras planas, class hierarchies, folder hier., etc.
+DETALLADO: defaults: usuar settings defaults en lugar de configuración explicita mandatoria testeabliidad,debugging sin tener que romper el codigo y hackearlo por todos lados
+DETALLADO: automated tools, support for deployment: no automatizar tareas poco usudas o muy complejas de automatizar
+INTRO: no desarrollar varias funcionalidades a la vez, a medias: 
+
+
+-------------------------------------------------------------------------------
+
+historias personales
+    DO NOT TOUCK + PHONE NUMBER
