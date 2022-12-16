@@ -1276,6 +1276,89 @@ supporting a non optimized working mode leads to a bigger codebase,
 more test cases, and more code to mantain. Again we have to ponder
 the risks, the benefits and decide wisely.
 
+Freeze
+feature freezing - bugs - rough edges - mvp - scope minimazation -
+eternal expansion -  stable release - testing real use - functionality packing -
+postponed fixes - completion convergence - mythical finished beats
+
+When someone is part a corp team, there is a clear cut of 
+what is included in the current stage, there are new features 
+to provide, fixes to solve and quality characteristics to meet.
+It might be the case, now and then, that during the a given 
+iteration of the software development some urgen need arises 
+and must be addressed but it should not happen too often. 
+
+If we try to polish our software to perfection, we will enter
+a black hole no one ever scaped. Software is just too complex
+to be crafted to consider every concevable situation, input,
+combination of usages, specially considering it's layered 
+over tens of layers of its constituend parts. What we can do,
+is to craft it to stand perfectly well for the use it's intended
+for, that is a finite task, we can cheer up. Well, it is a finite
+task as long as we do not allow others or ourselves to perpetually 
+expand it's capabilities. Specially since a few common language 
+words can express a requirement that can require ten thousand 
+constructing hours to materialize. Its form thus, is never final, 
+since software is by nature plastic, there is always room 
+to accomodate to different usage and conditions and as amorph
+and complex as it is, agreeing on it's completion according 
+to plans is a hard issue. 
+
+There is a mythical being that no one has ever seen but everyone
+long for, it's the final complete machinery, the ultimate software 
+beast which, once arrived, while shine us by its sublime
+eternal life. No, it's a myth. We are frankenstein's brothers
+and our beasts are cousins of frankenstein's child. Our machinery 
+exits the lab as a composite imperfect craft, subject to all kind
+of abstract rusting forces with destructive power. The software 
+will be comfronted to hardware and operative systems changes,
+security vulnerabilities, end of life of its constituend components, 
+to fatal discovery of flaws that can lead to deliverate or
+unintended disasters, it can be surparsed by better software 
+and let to rust from lack of maintenance, etc.
+
+Being capable of reaching production or to give additional features 
+to productive systems requires that everyone involved agree to avoid 
+expanding any further the work commited to do. After we deliver, we can
+talk again for new horizons. This is specially crucial if we are working 
+alone or with a couple friends to build something by heart, ti is of vital
+importance if we are rogue programmers and engineers. We are constantly 
+tempted to add cool features on the go. 
+
+If we want to reach a new production state as soon as possible, we should
+strive for scope minimization, to limit the scope of changes to the bare 
+minimum we need to deliver better feature set. If we are going fo the first
+shiny release there is a term coined for that scope minimization: Minimal 
+Viable Product.
+
+Even simple features, any single line of code change is subject to introduce
+an error, it requires proper testing, we need to be sure there is no sneaky 
+way it can affect other parts of the systems. Even simple features have to 
+be excercised to ensure usability, utility, it has to be supported 
+in the future, they expand our codebase, it expands the domain we are
+dealing with. We expand the manual work that needs to be done.  
+Its proper completion might require to write additional test cases. 
+
+We have to freeze functionality at some point to allow getting ready
+to deploy a new version of the machinery in the near futre. When we freeze,
+the beast still evolves, it is subject to manual and automatic tests, 
+it's checked and rechecked to ensure it is properly working, bug fixes
+are needed, somes get resolved other just tracked for future resolution 
+if we can live with the rough edges. We will deliver an imperfect machine 
+through ever minor adjustemnts until we converge to a reasonable useful 
+state longed for others or ourselves. 
+
+Given the fact that going to production is an elaborate process and each
+delivery entails its risks and costs, functionality is normally packed to
+be promoted as all or none set. Each version delivery is also properly 
+tagged to have a reference point to go back or branch when needed.
+Being ready implies we promote the current state to more stable environment 
+progressively climbing to production. If it is not good enough we back pedal,
+correct the problems and go climb again. We then subject the machine 
+to real use, progressively if possible. We might broadcast it for public 
+experimentation or productive usage.
+
+
 
 TO BE CONTINUED
 
