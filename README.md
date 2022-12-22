@@ -1358,6 +1358,210 @@ correct the problems and go climb again. We then subject the machine
 to real use, progressively if possible. We might broadcast it for public 
 experimentation or productive usage.
 
+Shortcuts and Bottlenecks
+
+layered analysis, removal tradeoff, non standard practices, 
+simple architectures, working vs. technically complete, 
+incomplete across vs. Incomplete layer, incomplete layers, 
+pitching propposals, one excelent thing, migration to simpler, 
+faster technology, releasing locked resources, inot prowess, not speed
+
+When we are fight and loosing the battle to reach production at  
+an acceptable timeframe, the ambience get tick, pressure gets higher, 
+people gets irritable, stress spreads and catches pretty mutch anybody, 
+people’s interactions becomes rough. Even if we are just a couple 
+friends crafting machinery for the sake of it, a subset of those problems 
+arise. Even if we are just one guy working, we become impatient and
+feith in our bests can be depleted. We are in troubled waters if 
+we over and over we expand the timeframe.
+
+When this kind of situation arrives instead of just focusing in the work
+to be done and just keep pushing the wall the way we do it is better to hit 
+the hand brakes, get out of the car, and strategise. 
+
+It is better to analyse the silent bottlenecks we are pushing though. 
+
+It is reflect and take a bird’s eye to the cliff we have to go through.
+Where are we spending too much time ? It might be a functionality that 
+is too big and cumbersome to build, it might be that we have just too 
+much functionality to add before reaching production ? Is it that 
+functionality scope ever expands ? In this case, the bottleneck is 
+imposed at PM domain  (either impersonated by a person or just a role
+someone plays) . It might be that the works requires to deal to massively 
+complex and slow set of components that are a pain to use,  it might be 
+that the components to use, language and frameworks besides being complex,
+lack proper documentation, it might be that the development related 
+processess loads to much weight on developers, it might be that the quality
+required is too high for some parts of the project to get things moving;
+if the problems live in these cases, then we are dealing with engineering 
+problems. It might also be that the arquitecture and structure, the development
+environment and it tools imposes too much work and make constructing 
+functionality cumbersome and a pain. If this is the case our bottleneck 
+are at architecture domain. If the ingineering and architecture are fine
+but the codebase is a massive mess, full of cryptic, tangled, and long
+semi obsolete code, if the code has just too much ad hoc boilerplate, 
+it is repetitive and inconsistent. If it is not organized in proper
+levels of conceptualization and is hard to map functionality to code, 
+if it is cross sectionally unreliable, then whe are dealing with
+programmers bottlenecks.
+
+Wherever lies these bottlenecks, we have to ponder our chance to get
+rid of them, analyse risk and reward, ponder the tradeoff to keep
+the status quo or take a bold move. We have to pick our battle,
+we have to pick the most promising one all things considered.
+Before move on, we have to face the possibility that we can fail 
+in the endevour and just loss our time and add more delay to an 
+already overdue project. When we are on our own, it is just a matter
+to take the bold decision, go deep into it and get the glory 
+or miserably fail. The only key preparation we need is to decide
+how much time we can comfortably affort to spend and to make 
+a proper snapshot of the system to back pedal if the reality 
+doesn’t match or expectations.
+
+When we are on a larger team, we need to be sure that the decision 
+chain is in the same line. We can expore a bit to assess the viability
+but refrain to explore to mutch to avoid the risk of geting a buck
+et of cold water in the face when no one support us. 
+
+Proper communication implies going to the right person that holds 
+responsability for the issue at hand, expose clearly the problem 
+the team is facing and make sure they too seem it as a problem,
+then pitch the solution envisioned briefly, at a thecnical level 
+they can understand, explain it’s benefits and why it’s crucial
+giving the state of things, and to the same thing with anyone involved 
+in the decision chain, at a joint meeting or in several. Sense the
+waters, if you see people doesn’t seem to want to follow you in this
+matter, just get chill, ask if anyone has proposal to get rid of this 
+bottleneck or any other, and leave it for their consideration, just
+be sure to not get in merry brainstorm of umbaked ideas. If your
+proposal gets green lights, then make sure the key members of the
+team are with you, or at least they won’t form a motín, specially
+if you jumped a few ranks of the command chain.  While to somewhat 
+extent we can count that everyone is interested in the project 
+success, it’s not uncommon that personal ego, envy, competition,
+or just feelings touched get involved. In the short run, you
+might gain some animosity towards you. 
+
+What is interesting in bottleneck removal is that it’s normally 
+not a long tedious repetitive list of menial tasks that as a grain
+of sand to build a large castle. Bottleneck removal is a strategy,
+then a tactic and a rater small altough complex implementation 
+that yields brutal rewards. It allows you to challenge yourself, 
+and work with high focus, silently, outside of the usual chore 
+like realms of duty compliance, and face glory or doom. Bottleneck 
+removal is not a matter of technical prowess and blazzing fast coding,
+it’s a combination of strategizing at the right level, the ability 
+to find determine the biggest solvable problem, communicate with 
+the right people, and take a bold move to widen the clugged parts 
+of the system and it’s processes.
+
+Sometimes, the misfit is not in a particular part of the system,
+it’s instead related to the fact that we are stuck with a practice 
+at engineering or architecture level that imposes a huge drag.
+It can be the case that is a standard practice, a current trend 
+and default to go way of making things, while that can be benefical 
+in incountable scenarios, and is always wise to know them, it can
+be a very bad fit in our current scenario of overdue. Maybe we
+are tied to comply with it as a defacto standard but nontheless, 
+it’s always aregueable moving against lauching to production 
+for technical style is a bad  trade on a forseen overdue timeline 
+casting a shadow over the project and posing a risk of cancel
+the whole deal or worst. It’s not hard to negotiate with non
+technical people to cast the design a to an unorthodox mold 
+if it’s pave the road to finally launch, reduce non technical 
+risks and leave pressure escape for everyone. And once non 
+technical crowd is on board, negotiation with savvy experts 
+it’s way simpler, it gets leveraged in our favor with the 
+weight of the backing folks who want problems to go away 
+no mather what.
+
+If the unorthodox approach is taken care properly, ensuring 
+proper isolation and endurance to the open waters of real usage, 
+we can launch sooner with no detrimental on the future of the platform 
+or component we all worked hard to build. Once we launched and got things
+under control, including the unavoidable stabilization and adjustments 
+of the machinery that will be rise, we can plan for casting the machinery 
+to an orthodox design. Software is massively flexible to accomodate 
+all kinds of changes, including recasting it’s design to whatever
+is nedeeded as long as we didn’t went to far and allowed to proliferate 
+wild approachs cross sectionally. We can, once releaved, as said,
+refocus on compliance to defacto standards, trends and good practices, 
+specially if it was explicitly required. 
+
+The same applies to unorthodox processes, if we shortcutted layers 
+of responsabilities, normal development cycles and systematic procedures, 
+and whatnot. Normal processes are necessary and good practice, and likely
+unavoidable to ensure a stable system whatever it is, but before production,
+we can certainly are better off even if it gets processes deorganized and 
+the most meticulous members of the team quite peaced off. Time to launch,
+when becomes crytical, overrides    structured application of engineering 
+principles in favor of allowing the most creative and bold guys of 
+the team to unwire the time bomb.
+
+One form we can gain faith in the process is getting complete
+the functionality to the point it probes  without any shadow 
+of doubt that the machinery can fulfill it’s requirements, trading
+off in against non functional soft requirements, that can be postponed
+in short term. The key to survive this approach is to ensure the unimplemented 
+features get treated equally cross sectionally in the system,  that way,
+there is no partial implementations spread unevenly that will probe to be 
+a pain and a technical debt near impossible to track and fix. If we know 
+what we are leaving aside, then we can handle it later in a well
+organized manner. A good way to organize this partial implementation 
+is doing it in a layered way to have a clear cut of what is done
+and what is yet not done altough in many cases is not possible, 
+so we are forced to tackle it later with special care. Depending 
+the waters we are going to navigate, we can postpone exception and 
+error treatment, security features, guarranties to control service 
+health metrics, important stuff that has no visibility until the 
+system gets stressed enough. Whatever the case, we can deliver core
+functionality soon enough to save the project showing viability. 
+At least in respect of the well behaved paths of use, the system
+showed to be complete enough. And in quite a brief time, we can 
+address the postponed non functional requirements. It is better
+to get something working and to be technically incomplete that 
+to have a finely polished functionality without providing other 
+crytical parts of the system. This is more a political trade 
+of than a shortcut, the work to be done can be even larger 
+that what we was in the path to do, but we fragmented and
+reorganized the construction in a pollitically safer order.
+
+Another way that can shortcut path to production and win launch
+is to provide something largely longed for it’s impact for the
+system’s users and the client. For example, it might be something
+that unlock commercial expansion, something that alleviates the tasks
+at hand for a good deal of resources to redirect work to more important 
+tasks. When we provide something exceptionally good, that seemed
+completely out of reach, we can be even pushed to production in spite 
+of have much pending work according to the envisioned plans.
+
+On the engineering domains, we can get a good tradeoff replacing 
+a flexible component that is a pain to develop with in favor of
+more modest one that is pleasant to work with, if that replacement 
+resides in the path that was causing the bottleneck, we can have 
+a huge payoff. We can take proper care, as before, to isolate 
+the access to the component to allow easy future replacement if it
+is the case that it’s usage is wide spread and can result 
+in a hard refactoring. 
+
+It is key that, when we consider parts of the system that
+are subject to change, not potential in a remote horizon 
+but in foreseable future, to take the additional work of 
+providing isolation. That way the replacement is a simple
+enough matter. What we should avoid, is to expand the
+architecture to make replacement a matter of configuration
+through patterns that implies the proliferation of interfaces 
+and dynamic code. If done through this mean, we will pose
+a load on the development that makes everyhting more 
+complicated, making debugging a pain through dynamic code
+which requires figure out exactly which kind of objects 
+and which can of behavior will get finally run of. Isolation 
+more often than not beats complex configurations, inversion 
+of controls, and agressive preparation to change.  Isolation
+not only provides simple replacement of components it gives
+the great benefit of avoiding proliferation of foreign 
+API access which is not well suited to the narrow 
+cases we need to use that kind of component.
 
 
 TO BE CONTINUED
